@@ -1,21 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/17 16:18:24 by maxklb            #+#    #+#             */
-/*   Updated: 2023/09/17 19:10:53 by makoch-l         ###   ########.fr       */
+/*   Created: 2023/09/17 19:12:14 by makoch-l          #+#    #+#             */
+/*   Updated: 2023/09/17 19:13:12 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
-{
-	int	i;
+#include <unistd.h>
 
-	i = 0;
-	while (str && str[i] != '\0')
-		i++;
-	return (i);
+void    ft_putchar_fd(char c, int fd)
+{
+    write(fd, &c, 1);
 }
