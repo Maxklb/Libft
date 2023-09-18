@@ -6,11 +6,9 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 15:36:40 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/09/18 15:49:15 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/09/18 18:19:28 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int ft_atoi(char *str)
 {
@@ -35,9 +33,4 @@ int ft_atoi(char *str)
         i++;
     }
     return (result * sign);
-}
-
-int	main()
-{
-	printf("-42:%d\n", ft_atoi("  \n  ---42a42llllPP"));
 }
