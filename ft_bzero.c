@@ -6,9 +6,11 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 11:17:27 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/09/21 17:25:37 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/09/21 17:26:36 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void bzero(void *s, size_t n)
 {
