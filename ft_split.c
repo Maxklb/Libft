@@ -6,12 +6,12 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 11:46:03 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/10/03 11:52:17 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/10/03 11:55:05 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "stdlib.h"
+#include <stdlib.h>
 
 int ft_word_count(char const *s, char c)
 {
