@@ -6,7 +6,7 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 18:13:49 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/10/04 18:16:10 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/10/04 18:31:00 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,9 @@ size_t ft_strlcat(char *dst, const char *src, size_t dstsize)
     i = 0;
     len = ft_strlen(src);
     if (!dst)
-        return (len);
+        return (0);
+    while (len +)
+    {
+        
+    }
 }
