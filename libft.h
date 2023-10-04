@@ -6,7 +6,7 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/17 19:15:56 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/10/04 18:32:28 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/10/04 19:17:25 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ int ft_isalpha(int  c)
 int ft_isascii(int c)
 int ft_isdigit(int c)
 int ft_isprint(int c)
+int ft_toupper(int c)
+int ft_lower(int c)
 int ft_strlen(char *str)
 void    bzero(void *s, size_t n)
 void    ft_putchar_fd(char c, int fd)
