@@ -6,7 +6,7 @@
 #    By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/18 15:25:48 by makoch-l          #+#    #+#              #
-#    Updated: 2023/09/18 15:27:15 by makoch-l         ###   ########.fr        #
+#    Updated: 2023/11/06 16:34:05 by makoch-l         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,3 +14,5 @@ CC = gcc
 CFLAGS = -Wall -Werror -Wextra
 
 NAME = libft.a
+
+.PHONY : 
