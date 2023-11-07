@@ -6,7 +6,7 @@
 #    By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/18 15:25:48 by makoch-l          #+#    #+#              #
-#    Updated: 2023/11/07 16:11:31 by makoch-l         ###   ########.fr        #
+#    Updated: 2023/11/07 16:14:03 by makoch-l         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,6 +39,16 @@ all : $(NAME)
 
 $(NAME): $(OBJS)
 	$(CC) $(OBJS) -o $(NAME)
+
+clean :
+	$(RM) $(OBJS)
+
+fclean :
+	$(RM) $(NAME)
+
+re :
+	$(MAKE) fclean
+	$(MAKE) all
 
 
 .PHONY : clean fclean re
