@@ -6,17 +6,17 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/27 11:33:37 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/09/28 18:44:02 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/07 16:41:52 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-    size_t  i;
-    char    *dest2;
-    const char  *src2;
+    size_t	i;
+    char	*dest2;
+    const char	*src2;
 
     i = 0;
     

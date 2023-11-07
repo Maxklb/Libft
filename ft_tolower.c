@@ -6,13 +6,13 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 19:07:32 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/10/04 19:09:03 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/07 16:40:35 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
     if (c >= 'A' && c <= 'Z')
         c += 32;

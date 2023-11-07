@@ -6,17 +6,17 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 11:46:03 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/10/03 11:55:05 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/07 16:41:15 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-int ft_word_count(char const *s, char c)
+int	ft_word_count(char const *s, char c)
 {
-    int count;
-    int word;
+    int	count;
+    int	word;
 
     count = 0;
     word = 0;
@@ -34,9 +34,9 @@ int ft_word_count(char const *s, char c)
     return (count);
 }
 
-int ft_word_lenght(char const *s, char c)
+int	ft_word_lenght(char const *s, char c)
 {
-    int i;
+    int	i;
 
     i = 0;
     while (s[i] != c && s[i])
@@ -44,9 +44,9 @@ int ft_word_lenght(char const *s, char c)
     return (i);
 }
 
-char *word_copy(char *src, int i)
+char	*word_copy(char *src, int i)
 {
-    char *dest;
+    char	*dest;
     
     dest = malloc((i + 1) * sizeof(char *));
     if (!dest)
@@ -57,7 +57,7 @@ char *word_copy(char *src, int i)
     return (dest);
 }
 
-char **ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
     
 }

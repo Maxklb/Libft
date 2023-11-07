@@ -6,13 +6,13 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 11:35:19 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/06 16:03:20 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/07 16:40:45 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strchr(const char *string, int searchedChar)
+char	*ft_strchr(const char *string, int searchedChar)
 {
     
 }
