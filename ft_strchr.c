@@ -6,12 +6,26 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 11:35:19 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/08 12:15:43 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/08 13:23:27 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *string, int searchedChar)
+char	*ft_strchr(const char *string, int searchedchar)
 {
+	char			*str;
+	unsigned char	char_searchedchar;
+
+	str = (char *) string;
+	char_searchedChar = (unsigned char *) searchedchar;
+	while (*str)
+	{
+		if (*str == char char_searchedchar)
+			return (str);
+		str++;
+	}
+	if (*str == char char_searchedchar)
+		return (str);
+	return (NULL);
 }
