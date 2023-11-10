@@ -6,7 +6,7 @@
 #    By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/18 15:25:48 by makoch-l          #+#    #+#              #
-#    Updated: 2023/11/08 12:30:09 by makoch-l         ###   ########.fr        #
+#    Updated: 2023/11/10 19:48:35 by makoch-l         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,7 @@ SRCS =  ft_atoi.c \
 		ft_substr.c \
 		ft_tolower.c \
 		ft_toupper.c \
-		ft_calloc \
+		ft_calloc.c
 
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra 
