@@ -6,7 +6,7 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 12:28:13 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/09 15:17:55 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/10 14:47:16 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,5 @@ void	*ft_memchr(const void *memoryblock, int searchedchar, size_t size)
 			return (new_memoryblock + i);
 		i++;
 	}
-	return (0);
-}
-
-int main()
-{
-	char s1[] = "test";
-	char s2[] = "es";
-
-	ft_memchr(s1, s2, 5);
+	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 10:45:00 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/09 12:15:13 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/10 14:48:01 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	ft_strncmp(const char *first, const char *second, size_t length)
 	return (diff);
 }
 
-int main() 
+/*int main() 
 {
 	char s1[] = "test";
 	char s2[] = "testt";
@@ -50,3 +50,4 @@ int main()
 	if (strncmp(s1, s2, 4) > 0) 
 		printf("'%s' is superior than '%s'. \n", s1, s2);
 }
+*/
