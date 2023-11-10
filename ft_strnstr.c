@@ -1,29 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/09 12:28:13 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/10 16:27:31 by makoch-l         ###   ########.fr       */
+/*   Created: 2023/11/10 15:42:23 by makoch-l          #+#    #+#             */
+/*   Updated: 2023/11/10 16:27:12 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *memoryblock, int searchedchar, size_t size)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t length)
 {
-	size_t			i;
-	unsigned char	*new_memoryblock;
+	size_t	needle_length;
+	size_t	size1;
+	size_t	size2;
 
-	i = 0;
-	new_memoryblock = (unsigned char *) memoryblock;
-	while (i < size)
-	{
-		if (new_memoryblock[i] == (unsigned char) searchedchar)
-			return (new_memoryblock + i);
-		i++;
-	}
-	return (NULL);
+	if (!needle[0])
+		return ((char *) big);
+	needle_length = ft_strlen(length);
+	size1 = 0;
 }

@@ -6,13 +6,13 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 10:45:00 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/10 14:48:01 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/10 15:10:35 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
+//#include <stdio.h>
+//#include <string.h>
 
 int	ft_strncmp(const char *first, const char *second, size_t length)
 {
@@ -21,6 +21,8 @@ int	ft_strncmp(const char *first, const char *second, size_t length)
 
 	i = 0;
 	diff = 0;
+	if (length == 0)
+		return (0);
 	while (first[i] && second[i] && i < length)
 	{
 		if (first[i] != second[i])
