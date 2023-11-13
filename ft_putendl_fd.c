@@ -1,27 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/04 18:13:49 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/13 16:04:51 by makoch-l         ###   ########.fr       */
+/*   Created: 2023/11/13 15:17:39 by makoch-l          #+#    #+#             */
+/*   Updated: 2023/11/13 16:34:08 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
+void	ft_putendl_fd(char *s, int fd)
 {
-	int		i;
-	size_t	len;
-
-	i = 0;
-	len = ft_strlen(src);
-	if (!dst)
-		return (0);
-	while (len +)
-	{
-	}
+	ft_putstr_fd(s, fd);
+	ft_putchar_fd('\n', fd);
 }

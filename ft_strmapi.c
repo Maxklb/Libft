@@ -1,27 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/04 18:13:49 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/13 16:04:51 by makoch-l         ###   ########.fr       */
+/*   Created: 2023/11/13 15:41:42 by makoch-l          #+#    #+#             */
+/*   Updated: 2023/11/13 16:31:19 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	int		i;
-	size_t	len;
+	size_t	length;
+	size_t	i;
+	char	*dest;
 
+	if (!s || !f)
+		return (NULL);
+	length = ft_strlen(s);
 	i = 0;
-	len = ft_strlen(src);
-	if (!dst)
-		return (0);
-	while (len +)
+	dest = malloc(sizeof char) * (length + 1);
+	if (!dest)
+		return (NULL);
+	while (i < length)
 	{
+		dest[i] = (*f)(i, &s[i]);
+		i++;
 	}
+	dest[i] = '\0';
+	return (dest);
 }

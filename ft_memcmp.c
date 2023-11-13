@@ -6,7 +6,7 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 14:49:36 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/10 16:26:49 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/13 15:10:48 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ int	ft_memcmp(const void *pointer1, const void *pointer2, size_t size)
 	if (size == 0)
 		return (0);
 	i = 0;
-	*s1 = (char *) pointer1;
-	*s2 = (char *) pointer2;
+	s1 = (char *) pointer1;
+	s2 = (char *) pointer2;
 	while (size--)
 	{
 		if (s1[i] != s2[i])

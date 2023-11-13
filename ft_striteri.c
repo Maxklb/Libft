@@ -1,27 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/04 18:13:49 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/13 16:04:51 by makoch-l         ###   ########.fr       */
+/*   Created: 2023/11/13 15:20:44 by makoch-l          #+#    #+#             */
+/*   Updated: 2023/11/13 16:27:31 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	int		i;
-	size_t	len;
+	size_t	length;
+	size_t	i;
 
+	length = ft_strlen(s);
 	i = 0;
-	len = ft_strlen(src);
-	if (!dst)
-		return (0);
-	while (len +)
+	if (!f || !s)
+		return ;
+	while (i < length)
 	{
+		(*f)(i, &s[i]);
+		i++;
 	}
 }
