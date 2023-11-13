@@ -6,7 +6,7 @@
 #    By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/18 15:25:48 by makoch-l          #+#    #+#              #
-#    Updated: 2023/11/10 19:48:35 by makoch-l         ###   ########.fr        #
+#    Updated: 2023/11/13 13:57:02 by makoch-l         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,17 +22,17 @@ SRCS =  ft_atoi.c \
 		ft_memcpy.c \
 		ft_memmove.c \
 		ft_memset.c \
-		ft_memchr \
-		ft_memcmp \
+		ft_memchr.c \
+		ft_memcmp.c \
 		ft_putchar_fd.c \
 		ft_putstr_fd.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c \
 		ft_split.c \
 		ft_strchr.c \
-		ft_strrchr \
-		ft_strncmp\
-		ft_strnstr \
+		ft_strrchr.c \
+		ft_strncmp.c\
+		ft_strnstr.c \
 		ft_strlcat.c \
 		ft_strlcpy.c \
 		ft_strlen.c \
@@ -50,20 +50,23 @@ SRCS =  ft_atoi.c \
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra 
 
+OBJS = $(SRCS:.c=.o) 
+
 all : $(NAME)
 
+.c.o:
+	$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
+
 $(NAME): $(OBJS)
-	$(CC) $(OBJS) -o $(NAME)
+	ar rc $(NAME) $(OBJS)
 
 clean :
-	$(RM) $(OBJS)
+	rm -f $(OBJS)
 
-fclean :
-	$(RM) $(NAME)
+fclean : clean
+	rm -f $(NAME)
 
 re :
-	$(MAKE) fclean
-	$(MAKE) all
+	fclean all
 
-
-.PHONY : clean fclean re
+.PHONY : all clean fclean re

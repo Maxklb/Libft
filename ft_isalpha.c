@@ -6,13 +6,13 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 18:05:33 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/08 15:05:52 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/13 13:31:48 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*int	ft_isupper(int c)
+int	ft_isupper(int c)
 {
 	if (c >= 'A' || c <= 'Z')
 		return (1);
@@ -24,7 +24,7 @@ int	ft_islower(int c)
 	if (c >= 'a' || c <= 'z')
 		return (1);
 	return (0);
-}*/
+}
 
 int	ft_isalpha(int c)
 {

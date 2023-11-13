@@ -6,7 +6,7 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/27 11:33:37 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/07 16:48:33 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/13 13:34:22 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	const char	*src2;
 
 	i = 0;
+	dest2 = (char *) dest;
+	src2 = (char *) src;
 	if (!src || !dest)
 		return (NULL);
 	if (src2 < dest2)

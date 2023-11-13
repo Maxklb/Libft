@@ -6,11 +6,11 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 18:13:49 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/08 12:22:22 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/13 13:44:19 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+/* #include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
@@ -24,4 +24,4 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	while (len +)
 	{
 	}
-}
+} */

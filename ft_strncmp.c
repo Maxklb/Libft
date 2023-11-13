@@ -6,13 +6,11 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 10:45:00 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/10 15:10:35 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/13 13:44:25 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdio.h>
-//#include <string.h>
 
 int	ft_strncmp(const char *first, const char *second, size_t length)
 {
