@@ -6,13 +6,13 @@
 #    By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/18 15:25:48 by makoch-l          #+#    #+#              #
-#    Updated: 2023/11/20 14:14:41 by makoch-l         ###   ########.fr        #
+#    Updated: 2023/11/20 16:58:04 by makoch-l         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft.a
+NAME := libft.a
 
-SRCS =  ft_atoi.c \
+SRCS :=  ft_atoi.c \
 		ft_bzero.c \
 		ft_isalnum.c \
 		ft_isalpha.c \
@@ -59,6 +59,7 @@ all : $(NAME)
 
 $(NAME): $(OBJS)
 	ar rc $(NAME) $(OBJS)
+	ranlib $(NAME)
 
 clean :
 	rm -f $(OBJS)
@@ -69,4 +70,4 @@ fclean : clean
 re :
 	fclean all
 
-.PHONY : all clean fclean re
+.PHONY : all $(NAME) clean fclean re
