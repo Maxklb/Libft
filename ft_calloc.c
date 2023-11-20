@@ -1,31 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/06 11:35:19 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/20 14:22:21 by makoch-l         ###   ########.fr       */
+/*   Created: 2023/11/20 14:37:55 by makoch-l          #+#    #+#             */
+/*   Updated: 2023/11/20 15:04:37 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *string, int searchedchar)
+void	*calloc(size_t elementcount, size_t elementsize)
 {
-	char			*str;
-	unsigned char	char_searchedchar;
+	size_t			i;
+	unsigned char	*ptr;
 
-	str = (char *) string;
-	char_searchedchar = (unsigned char) searchedchar;
-	while (*str)
+	i = 0;
+	if (elementcount > 18446744073709551615UL / elementsize)
+		return (NULL);
+	ptr = (void *) malloc (elementcount * elementsize);
+	if (!ptr)
+		return (NULL);
+	if (i < elementcount * elementcount)
 	{
-		if (*str == char_searchedchar)
-			return (str);
-		str++;
+		ptr[i] = (unsigned char) 0;
+		i++;
 	}
-	if (*str == char_searchedchar)
-		return (str);
-	return (NULL);
+	return ((void *) ptr);
 }
