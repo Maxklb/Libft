@@ -1,33 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/17 16:30:53 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/20 15:20:43 by makoch-l         ###   ########.fr       */
+/*   Created: 2023/11/20 15:05:47 by makoch-l          #+#    #+#             */
+/*   Updated: 2023/11/20 15:20:34 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	num_size(int num)
+char	*strdup(const char *source)
 {
-	int	i;
+	size_t	size;
+	char	*dest;
 
-	i = 0
-	if (num < 0)
-		num *= -1;
-	while (n != 0)	
-	{
-		n /= 10;
-		i++;
-	}
-	return (i);
-}
-
-char	*ft_itoa(int n)
-{
-	
+	size = ft_strlen(source) + 1;
+	dest = (char *) malloc(size * sizeof(char));
+	if (!dest)
+		return (NULL);
+	ft_strlcpy(dest, source, size);
+	return (dest);
 }

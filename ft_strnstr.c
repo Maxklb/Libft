@@ -6,7 +6,7 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 15:42:23 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/20 14:28:57 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/20 15:23:22 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,5 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t length)
 		}
 		i++;
 	}
-	return (NULL);	
+	return (NULL);
 }

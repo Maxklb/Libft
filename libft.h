@@ -6,7 +6,7 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/17 19:15:56 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/20 14:39:21 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/20 15:16:09 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ void	*calloc(size_t elementcount, size_t elementsize);
 char	*ft_strchr(const char *string, int searchedChar);
 char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
+char	*strdup(const char *source);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlen(const char *str);
