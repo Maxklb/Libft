@@ -6,7 +6,7 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 18:41:45 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/08 12:22:06 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/20 15:52:30 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	size_t	len;
-	int		i;
+	size_t	length;
+	size_t		i;
 
 	i = 0;
-	len = ft_strlen(src);
+	length = ft_strlen(src);
 	if (!dst || !src)
 		return (0);
 	while (dstsize > (i + 1) && src[i])
@@ -28,5 +28,5 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	}
 	if (dstsize > i)
 		dst[i] = '\0';
-	return (len);
+	return (length);
 }
