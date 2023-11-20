@@ -6,7 +6,7 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/17 19:15:56 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/13 16:36:26 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/20 11:02:47 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ void	*ft_memchr(const void *memoryblock, int searchedchar, size_t size);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	*ft_strchr(const char *string, int searchedChar);
 char	**ft_split(char const *s, char c);
+char	*ft_itoa(int n);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t length);

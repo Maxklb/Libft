@@ -6,7 +6,7 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 18:32:21 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/17 16:22:46 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/17 16:28:56 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,7 @@ char	**ft_split(const char *s, char c)
 	return (tab);
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 
 int main(void)
 {
@@ -103,4 +103,4 @@ int main(void)
 	else
 		printf("Marche pas\n");
 	return 0;
-}
+}*/
