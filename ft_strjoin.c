@@ -1,28 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/20 15:56:16 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/22 00:17:39 by makoch-l         ###   ########.fr       */
+/*   Created: 2023/11/22 00:16:00 by makoch-l          #+#    #+#             */
+/*   Updated: 2023/11/22 00:17:09 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const *source, unsigned int start, size_t length)
+char	*ft_substr(char const *s1, char const *s2)
 {
-	char	*dest;
-	int		i;
 	
-	if (!source)
-		return (NULL);
-	if (length < ft_strlen(source))
-		dest = malloc(sizeof(char) * (ft_strlen(source) + 1));
-	else
-		dest = malloc(sizeof(char) * (length + 1));
-	if (!dest)
-		return (NULL);
 }

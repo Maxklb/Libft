@@ -6,7 +6,7 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 15:41:42 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/20 15:23:03 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/22 00:14:41 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		return (NULL);
 	while (i < length)
 	{
-		dest[i] = (*f)(i, &s[i]);
+		dest[i] = (*f)(i, s[i]);
 		i++;
 	}
 	dest[i] = '\0';
