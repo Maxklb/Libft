@@ -6,13 +6,13 @@
 #    By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/18 15:25:48 by makoch-l          #+#    #+#              #
-#    Updated: 2023/11/22 00:52:30 by makoch-l         ###   ########.fr        #
+#    Updated: 2023/11/22 01:00:32 by makoch-l         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME := libft.a
+NAME = libft.a
 
-SRCS :=  ft_atoi.c \
+SRCS =  ft_atoi.c \
 		ft_bzero.c \
 		ft_isalnum.c \
 		ft_isalpha.c \

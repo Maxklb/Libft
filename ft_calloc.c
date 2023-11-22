@@ -6,13 +6,13 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 14:37:55 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/20 15:20:20 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/22 01:06:46 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*calloc(size_t elementcount, size_t elementsize)
+void	*ft_calloc(size_t elementcount, size_t elementsize)
 {
 	size_t			i;
 	unsigned char	*ptr;

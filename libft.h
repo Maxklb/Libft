@@ -6,7 +6,7 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/17 19:15:56 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/22 00:26:59 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/22 01:08:06 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,11 +37,14 @@ void	*ft_memmove(void *dest, const void *src, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memchr(const void *memoryblock, int searchedchar, size_t size);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
-void	*calloc(size_t elementcount, size_t elementsize);
+void	*ft_calloc(size_t elementcount, size_t elementsize);
 char	*ft_strchr(const char *string, int searchedChar);
 char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
-char	*strdup(const char *source);
+char	*ft_strdup(const char *source);
+char	*ft_substr(char const *source, unsigned int start, size_t length);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlen(const char *str);
