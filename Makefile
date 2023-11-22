@@ -5,12 +5,10 @@
 #                                                     +:+ +:+         +:+      #
 #    By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/09/18 15:25:48 by makoch-l          #+#    #+#              #
-#    Updated: 2023/11/22 01:00:32 by makoch-l         ###   ########.fr        #
+#    Created: 2023/11/22 01:46:15 by makoch-l          #+#    #+#              #
+#    Updated: 2023/11/22 01:49:35 by makoch-l         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
-NAME = libft.a
 
 SRCS =  ft_atoi.c \
 		ft_bzero.c \
@@ -47,19 +45,20 @@ SRCS =  ft_atoi.c \
 		ft_toupper.c \
 		ft_calloc.c
 
-CC = gcc
-
-CFLAGS = -Wall -Werror -Wextra 
-
 OBJS = $(SRCS:.c=.o) 
 
 .c.o:
 	$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
 
-$(NAME): $(OBJS)
-	ar -rcs $(NAME) $(OBJS)
+CC = gcc
+CFLAGS = -Wall -Werror -Wextra 
+
+NAME = libft.a
 
 all : $(NAME)
+
+$(NAME): $(OBJS)
+	ar rcs $(NAME) $(OBJS)
 
 clean :
 	rm -f $(OBJS)
@@ -67,6 +66,6 @@ clean :
 fclean : clean
 	rm -f $(NAME)
 
-re : fclean all
+re : fclean $(NAME)
 
 .PHONY : all clean fclean re
