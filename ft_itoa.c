@@ -6,11 +6,11 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 16:30:53 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/20 15:20:43 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/22 14:58:26 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+/*#include "libft.h"
 
 static int	num_size(int num)
 {
@@ -30,4 +30,4 @@ static int	num_size(int num)
 char	*ft_itoa(int n)
 {
 	
-}
+}*/

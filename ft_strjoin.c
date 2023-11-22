@@ -6,13 +6,13 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 00:16:00 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/22 01:05:37 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/22 14:57:56 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+/*#include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	
-}
+}*/

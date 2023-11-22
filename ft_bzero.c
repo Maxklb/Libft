@@ -6,13 +6,13 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 11:17:27 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/07 16:44:08 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/22 15:25:21 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, 0, n);
 }

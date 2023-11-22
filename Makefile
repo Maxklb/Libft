@@ -6,9 +6,11 @@
 #    By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/22 01:46:15 by makoch-l          #+#    #+#              #
-#    Updated: 2023/11/22 01:49:35 by makoch-l         ###   ########.fr        #
+#    Updated: 2023/11/22 14:57:36 by makoch-l         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+NAME = libft.a
 
 SRCS =  ft_atoi.c \
 		ft_bzero.c \
@@ -52,8 +54,6 @@ OBJS = $(SRCS:.c=.o)
 
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra 
-
-NAME = libft.a
 
 all : $(NAME)
 

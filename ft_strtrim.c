@@ -6,13 +6,13 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 00:19:57 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/22 00:20:38 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/22 14:58:13 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+/*#include "libft.h"
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	
-}
+}*/
