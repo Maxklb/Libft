@@ -6,23 +6,36 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 15:56:16 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/22 14:59:18 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/23 16:28:28 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include "libft.h"
+#include "libft.h"
 
-char	*ft_substr(char const *source, unsigned int start, size_t length)
+char	*ft_substr(char const *source, unsigned int start, size_t len)
 {
 	char	*dest;
-	int		i;
-	
+	size_t	i;
+
+	i = 0;
 	if (!source)
 		return (NULL);
-	if (length < ft_strlen(source))
+	if (len < ft_strlen(source))
 		dest = malloc(sizeof(char) * (ft_strlen(source) + 1));
 	else
-		dest = malloc(sizeof(char) * (length + 1));
+		dest = malloc(sizeof(char) * (len + 1));
 	if (!dest)
 		return (NULL);
-}*/
+	if (start < ft_strlen(source))
+	{
+		while (source[start + i] && i < len)
+		{
+			dest[i] = source[start + i];
+			i++;
+		}
+		dest[i] = 0;
+	}
+	else
+		dest[0] = 0;
+	return (dest);
+}

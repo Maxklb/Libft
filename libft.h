@@ -6,7 +6,7 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/17 19:15:56 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/22 15:25:04 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/23 15:09:21 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ char	*ft_strchr(const char *string, int searchedChar);
 char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
 char	*ft_strdup(const char *source);
-char	*ft_substr(char const *source, unsigned int start, size_t length);
+char	*ft_substr(char const *source, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
