@@ -6,7 +6,7 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 18:32:21 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/17 16:28:56 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/27 14:47:11 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ static size_t	ft_word_length(const char *s, char c)
 	return (i);
 }
 
-static	char	**free_tab(char **tab, size_t size)
+static char	**free_tab(char **tab, size_t size)
 {
 	size_t	i;
 

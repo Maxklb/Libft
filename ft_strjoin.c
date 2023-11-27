@@ -6,7 +6,7 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 00:16:00 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/24 14:38:57 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/27 14:43:27 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	}
 	while (s2[j])
 	{
-		dest[i +j] = s2[j];
+		dest[i + j] = s2[j];
 		j++;
 	}
 	dest[i + j] = 0;
