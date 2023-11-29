@@ -6,7 +6,7 @@
 /*   By: makoch-l <makoch-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 13:25:10 by makoch-l          #+#    #+#             */
-/*   Updated: 2023/11/20 14:20:42 by makoch-l         ###   ########.fr       */
+/*   Updated: 2023/11/29 18:15:38 by makoch-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strrchr(const char *string, int searchedchar)
 	unsigned char	char_searchedchar;
 
 	str = (char *) string;
-	last_char = (void *) 0;
+	last_char = NULL;
 	char_searchedchar = (unsigned char) searchedchar;
 	while (*str)
 	{
